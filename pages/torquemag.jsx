@@ -1,6 +1,30 @@
 import React, {useState, useEffect} from 'react'
 import Moment from 'react-moment';
 import Link from 'next/link'
+import styled from 'styled-components'
+
+const ComponentLayout = styled.div`
+    width:80vw;
+    margin: 0 auto;
+    header{
+        background:#f5f5f5;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px 50px;
+    }
+    .content{
+        width:60%;
+        margin:0 auto;
+        div{
+            border-bottom:solid 1px #ddd;
+            padding-bottom:20px;
+            &:last-child{
+                border-bottom:none;
+            }
+        }
+    }
+`
 
 export default function WPMayor() {
     const [posts, setPosts] = useState({
@@ -19,10 +43,12 @@ export default function WPMayor() {
     }, [])
 
     return (
-        <div>
-            <Link href="/"><a> Back </a></Link>
-            <h2>Torque Mag</h2>
-
+        <ComponentLayout>
+            <header>
+                <h2>Torque Mag</h2>
+                <Link href="/"><a> Back </a></Link>
+            </header>
+            <div className="content">
             {
                 posts.loading 
                 ? 
@@ -41,6 +67,7 @@ export default function WPMayor() {
                     )
                 })
             }
-        </div>
+            </div>
+        </ComponentLayout>
     )
 }
