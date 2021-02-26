@@ -5,6 +5,11 @@ import styled from 'styled-components'
 const ContentWrapper = styled.div`
     width:60%;
     margin:0 auto;
+    @media(max-width:768px){
+        width:100%;
+        margin: 0 auto;
+        padding:15px;
+    }
 `
 
 export default function Content(props) {

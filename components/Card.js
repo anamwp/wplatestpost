@@ -8,6 +8,11 @@ const CardWrapper = styled.div`
     &:last-child{
         border-bottom:none;
     }
+    @media(max-width:768px){
+        h2{
+            font-size:20px;
+        }
+    }
 `
 
 export default function Card(props) {

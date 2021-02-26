@@ -5,6 +5,10 @@ import styled from 'styled-components'
 const LinksWrapper = styled.div`
   display:grid;
   grid-template-columns:repeat(4, 1fr);
+  @media(max-width:768px){
+    grid-template-columns:repeat(2, 1fr);
+    padding:15px;
+  }
   a{
     border:solid 1px #ddd;
     padding:5px 15px;
