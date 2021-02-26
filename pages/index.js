@@ -55,6 +55,8 @@ export default function Home() {
             <Link href="/radiustheme"><a> Radius Theme </a></Link>
             <Link href="/wpmet"><a> WP Met </a></Link>
             <Link href="/themesgrove"><a> Themesgrove </a></Link>
+            <Link href="/kinsta"><a> Kinsta </a></Link>
+            <Link href="/wpleaders"><a> WP Leaders </a></Link>
         </LinksWrapper>
       </main>
 

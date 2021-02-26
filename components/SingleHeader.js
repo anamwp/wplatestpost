@@ -8,6 +8,12 @@ const HeaderWrapper = styled.header`
     justify-content:space-between;
     align-items:center;
     padding:20px 50px;
+    @media(max-width:768px){
+        padding:20px;
+        h2{
+            margin:0;
+        }
+    }
 `
 
 export default function SingleHeader(props) {
