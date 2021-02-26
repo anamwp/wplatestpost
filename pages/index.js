@@ -46,6 +46,11 @@ export default function Home() {
             <Link href="/csstricks"><a> CSS Tricks </a></Link>
             <Link href="/wpastra"><a> WP Astra </a></Link>
             <Link href="/thrivethemes"><a> Thrive Themes </a></Link>
+            <Link href="/wpengine"><a> WP Engine </a></Link>
+            <Link href="/wpmanageninja"><a> WP Manageninja </a></Link>
+            <Link href="/radiustheme"><a> Radius Theme </a></Link>
+            <Link href="/wpmet"><a> WP Met </a></Link>
+            <Link href="/themesgrove"><a> Themesgrove </a></Link>
         </LinksWrapper>
       </main>
 
