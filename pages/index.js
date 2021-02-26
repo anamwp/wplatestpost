@@ -37,6 +37,15 @@ export default function Home() {
             <Link href="/wptavern"><a> WP Tavern </a></Link>
             <Link href="/torquemag"><a> Torque Mag </a></Link>
             <Link href="/gutenbergtimes"><a> Gutenberg Times </a></Link>
+            <Link href="/woocommerce"><a> WooCommerce </a></Link>
+            <Link href="/techcrunch"><a> Tech Crunch </a></Link>
+            <Link href="/themeum"><a> Themeum </a></Link>
+            <Link href="/wedevs"><a> weDevs </a></Link>
+            <Link href="/wpdeveloper"><a> WPDeveloper </a></Link>
+            <Link href="/elementor"><a> Elementor </a></Link>
+            <Link href="/csstricks"><a> CSS Tricks </a></Link>
+            <Link href="/wpastra"><a> WP Astra </a></Link>
+            <Link href="/thrivethemes"><a> Thrive Themes </a></Link>
         </LinksWrapper>
       </main>
 
