@@ -21,6 +21,20 @@ export default function GithubCard(props) {
         data: '',
         status: false
     })
+    const [org, setOrg] = useState();
+    // const orgapiurl = 'https://api.github.com/orgs/themexpert/repos';
+    const orgapiurl = 'https://api.github.com/repos/themexpert/onepager/commits?sha=develop';
+    useEffect(() => {
+        // setData({loading: true});
+        fetch(orgapiurl)
+        .then(res => res.json())
+        .then(data => {
+            setOrg( data );
+        });
+    }, []);
+    console.log('org', org);
+
+    
     const apiurl = 'https://api.github.com/users/' + props.username;
     useEffect(() => {
         setData({loading: true});

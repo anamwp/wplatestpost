@@ -61,6 +61,7 @@ export default function Home() {
 
         <LinksWrapper>
           <Link href="/github"><a> Check Github Profile </a></Link>
+          <Link href="/gitorg"><a> Check Github Organaisation </a></Link>
         </LinksWrapper>
 
       </main>
