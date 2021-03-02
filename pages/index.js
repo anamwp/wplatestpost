@@ -58,6 +58,11 @@ export default function Home() {
             <Link href="/kinsta"><a> Kinsta </a></Link>
             <Link href="/wpleaders"><a> WP Leaders </a></Link>
         </LinksWrapper>
+
+        <LinksWrapper>
+          <Link href="/github"><a> Check Github Profile </a></Link>
+        </LinksWrapper>
+
       </main>
 
       <footer className={styles.footer}>
