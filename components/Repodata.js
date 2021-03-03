@@ -6,7 +6,7 @@ import moment from 'moment';
 
 export default function Repodata() {
     const [repo, setRepo] = useState();
-    const octokit = new Octokit({ auth: 'c3721103c93659ac10ce8ad3d21cf4fe44380121' });
+    const octokit = new Octokit({ auth: process.env.gitauth });
     const [todayobj, setTodayobj] = useState();
     const [yesterdayobj, setYesterdayobj] = useState()
 

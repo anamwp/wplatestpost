@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 export default function Latestcommit() {
     const [commits, setCommits] = useState([]);
-    const octokit = new Octokit({ auth: 'c3721103c93659ac10ce8ad3d21cf4fe44380121' });
+    const octokit = new Octokit({ auth: process.env.gitauth });
     
     useEffect( async () => {
         const owner = 'themexpert',

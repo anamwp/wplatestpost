@@ -6,7 +6,7 @@ import moment from 'moment';
 
 export default function Daycommit() {
     const [commits, setCommits] = useState([]);
-    const octokit = new Octokit({ auth: 'c3721103c93659ac10ce8ad3d21cf4fe44380121' });
+    const octokit = new Octokit({ auth: process.env.gitauth });
     var todayDate = new Date();
     var isoToday = todayDate.toISOString();
     var isoYesterday = moment().subtract(1, 'days').toISOString();
