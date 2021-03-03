@@ -9,6 +9,7 @@
     "export": "next export"
   },
   "dependencies": {
+    "@octokit/core": "^3.2.5",
     "moment": "^2.29.1",
     "moment-timezone": "^0.5.33",
     "next": "10.0.7",

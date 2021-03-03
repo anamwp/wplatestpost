@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import Moment from 'react-moment';
 import styled from 'styled-components'
 import OrgCard from './OrgCard'
+import { Octokit } from "@octokit/core";
+
 
 const CardWrapper = styled.div`
     border-bottom:solid 1px #ddd;
@@ -35,7 +37,7 @@ export default function GithubOrgCard(props) {
             } );
         });
     }, []);
-    console.log('org', org);
+    // console.log('org', org);
 
     return (
         <>

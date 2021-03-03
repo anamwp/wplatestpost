@@ -17,22 +17,23 @@ const CardWrapper = styled.div`
 
 export default function OrgCard(props) {
     const data = props.data;
-    const commits_url = data.commits_url.replace('{/sha}', '?sha=master');
-    const [commit, setCommit] = useState({
-        loading: true,
-        data: ''
-    })
+    console.log('data', data);
+    // const commits_url = data.commits_url.replace('{/sha}', '?sha=master');
+    // const [commit, setCommit] = useState({
+    //     loading: true,
+    //     data: ''
+    // })
 
-    console.log(commits_url);
-    useEffect(() => {
-        fetch(commits_url)
-        .then( res => res.json())
-        .then( data => setCommit({
-            loading: false, 
-            data: data
-        }))
-    }, [])
-    console.log('commit', commit.data[0]);
+    // console.log(commits_url);
+    // useEffect(() => {
+    //     fetch(commits_url)
+    //     .then( res => res.json())
+    //     .then( data => setCommit({
+    //         loading: false, 
+    //         data: data
+    //     }))
+    // }, [])
+    // console.log('commit', commit.data[0]);
     return (
         <CardWrapper key={data.id}>
             <h2>
@@ -40,7 +41,7 @@ export default function OrgCard(props) {
                     <span dangerouslySetInnerHTML={{ __html: data.name }}></span>
                 </a>
             </h2>
-            <p>
+            {/* <p>
                 <b>Last Commit : </b>
             {
                 commit.loading 
@@ -53,7 +54,7 @@ export default function OrgCard(props) {
                     : 
                     'No commit found'
             }  
-            </p>              
+            </p>               */}
             {/* <Moment date={data.date} /> */}
         </CardWrapper>
     )
