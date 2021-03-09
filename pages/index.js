@@ -46,7 +46,6 @@ export default function Home() {
             <Link href="/themeum"><a> Themeum </a></Link>
             <Link href="/wedevs"><a> weDevs </a></Link>
             <Link href="/wpdeveloper"><a> WPDeveloper </a></Link>
-            <Link href="/elementor"><a> Elementor </a></Link>
             <Link href="/csstricks"><a> CSS Tricks </a></Link>
             <Link href="/wpastra"><a> WP Astra </a></Link>
             <Link href="/thrivethemes"><a> Thrive Themes </a></Link>
