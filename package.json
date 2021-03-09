@@ -11,11 +11,9 @@
   "dependencies": {
     "@octokit/core": "^3.2.5",
     "moment": "^2.29.1",
-    "moment-timezone": "^0.5.33",
     "next": "10.0.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-moment": "^1.1.1",
     "styled-components": "^5.2.1"
   }
 }

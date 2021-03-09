@@ -59,11 +59,6 @@ export default function Home() {
             <Link href="/wpleaders"><a> WP Leaders </a></Link>
         </LinksWrapper>
 
-        <LinksWrapper>
-          <Link href="/github"><a> Check Github Profile </a></Link>
-          <Link href="/gitorg"><a> Check Github Organaisation </a></Link>
-        </LinksWrapper>
-
       </main>
 
       <footer className={styles.footer}>
