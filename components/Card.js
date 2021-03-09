@@ -1,6 +1,6 @@
 import React from 'react'
-import Moment from 'react-moment';
 import styled from 'styled-components'
+import moment from 'moment'
 
 const CardWrapper = styled.div`
     border-bottom:solid 1px #ddd;
@@ -15,8 +15,23 @@ const CardWrapper = styled.div`
     }
 `
 
+const ReadableDate = (date) => {
+    const postdate = moment(date).format('L');
+    const todayDate = moment().format('L');
+    if(todayDate === postdate){
+        return (
+            <p>Today</p>
+        );
+    }else{
+        return (
+            <p>{moment(date).format('MMMM Do YYYY, h:mm:ss a')}</p>
+        );
+    }
+}
+
 export default function Card(props) {
     const data = props.posts;
+
     return (
         <CardWrapper key={data.id}>
             <h2>
@@ -24,7 +39,7 @@ export default function Card(props) {
                     <span dangerouslySetInnerHTML={{ __html: data.title.rendered }}></span>
                 </a>
             </h2>
-            <Moment date={data.date} />
+            {ReadableDate(data.date)}
         </CardWrapper>
     )
 }
