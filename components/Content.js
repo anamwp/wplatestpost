@@ -4,11 +4,15 @@ import styled from 'styled-components'
 
 const ContentWrapper = styled.div`
     width:60%;
-    margin:0 auto;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:20px;
     @media(max-width:768px){
         width:100%;
         margin: 0 auto;
         padding:15px;
+        grid-template-columns: repeat(1, 1fr);
     }
 `
 
@@ -35,7 +39,7 @@ export default function Content(props) {
             ? 
             'Loading'
             : 
-            posts.data.map(post => <Card key={post.id} posts={post}/>)
+            posts.data.map(post => <Card key={post.id} posts={post} apiurl={apiurl} />)
         }
         </ContentWrapper>
     )

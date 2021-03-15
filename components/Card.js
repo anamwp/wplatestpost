@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import moment from 'moment'
+import GetFeaturedImage from './GetFeaturedImage'
 
 const CardWrapper = styled.div`
     border-bottom:solid 1px #ddd;
@@ -31,9 +32,18 @@ const ReadableDate = (date) => {
 
 export default function Card(props) {
     const data = props.posts;
-
+    let main_url_arr = props.apiurl.split('/');
+    main_url_arr.pop();
+    let final_embed_url = `${main_url_arr.join('/')}/media/${data.featured_media}`;
     return (
         <CardWrapper key={data.id}>
+            {/* {
+                data.featured_image && <img src={data.featured_image.full[0]} alt=""/>
+            }
+            {
+                data.featured_image_src && <img src={data.featured_image_src} alt=""/>
+            } */}
+            <GetFeaturedImage embed_url={final_embed_url} />
             <h2>
                 <a href={data.link} target="_blank">
                     <span dangerouslySetInnerHTML={{ __html: data.title.rendered }}></span>
