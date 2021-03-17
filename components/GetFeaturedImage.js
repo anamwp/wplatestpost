@@ -9,7 +9,7 @@ const ImageWrapper = styled.div`
 `
 
 export default function GetFeaturedImage({data}) {
-    console.log('image', data.source_url);
+    // console.log('image', data.source_url);
     // console.log('length',  data ?? Object.values(data.media_details).length);
     return (
         <ImageWrapper>

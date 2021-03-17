@@ -16,6 +16,19 @@ const ContentWrapper = styled.div`
     }
 `
 
+const handleReceivedData = (data) => {
+    const myArr = [];
+    data.map( (item) => (
+        myArr.push({
+            'id' : item.id,
+            'title' : item.title,
+            'link' : item.link,
+            'date' : item.date,
+        })
+    ) );
+    return myArr;
+}
+
 export default function Content(props) {
     const apiurl = props.apiurl + '?_embed';
     const getSiteName = apiurl.split('/')[2];
@@ -35,7 +48,11 @@ export default function Content(props) {
             fetch(apiurl)
             .then(res => res.json())
             .then(data => {
-                window.localStorage.setItem(getSiteName, JSON.stringify(data))
+                // debugger;
+                let processData = handleReceivedData(data);
+                // loop through all array 
+
+                window.localStorage.setItem(getSiteName, JSON.stringify(processData))
                 setPosts({loading: false, data: data});
             });
         }
