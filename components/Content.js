@@ -17,7 +17,8 @@ const ContentWrapper = styled.div`
 `
 
 export default function Content(props) {
-    const apiurl = props.apiurl;
+    const apiurl = props.apiurl + '?_embed';
+    const getSiteName = apiurl.split('/')[2];
     const [posts, setPosts] = useState({
         loading: false, 
         data: []
@@ -25,11 +26,20 @@ export default function Content(props) {
 
     useEffect(() => {
         setPosts({loading: true});
-        fetch(apiurl)
-        .then(res => res.json())
-        .then(data => {
-            setPosts({loading: false, data: data});
-        });
+        let getLocalStorageData = window.localStorage.getItem(getSiteName); 
+        if(getLocalStorageData){
+            console.log('serve from local cache');
+            setPosts({loading: false, data: JSON.parse(getLocalStorageData)});
+        }else{
+            console.log('fetching data to store in local');
+            fetch(apiurl)
+            .then(res => res.json())
+            .then(data => {
+                window.localStorage.setItem(getSiteName, JSON.stringify(data))
+                setPosts({loading: false, data: data});
+            });
+        }
+        
     }, [])
 
     return (

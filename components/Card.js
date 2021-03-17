@@ -32,9 +32,12 @@ const ReadableDate = (date) => {
 
 export default function Card(props) {
     const data = props.posts;
-    let main_url_arr = props.apiurl.split('/');
-    main_url_arr.pop();
-    let final_embed_url = `${main_url_arr.join('/')}/media/${data.featured_media}`;
+    // console.log('data', data);
+    const mediaData = data._embedded ? data._embedded['wp:featuredmedia'] ? data._embedded['wp:featuredmedia'][0] : '':'';
+    // console.log('data', mediaData);
+    // let main_url_arr = props.apiurl.split('/');
+    // main_url_arr.pop();
+    // let final_embed_url = `${main_url_arr.join('/')}/media/${data.featured_media}`;
     return (
         <CardWrapper key={data.id}>
             {/* {
@@ -43,7 +46,7 @@ export default function Card(props) {
             {
                 data.featured_image_src && <img src={data.featured_image_src} alt=""/>
             } */}
-            <GetFeaturedImage embed_url={final_embed_url} />
+            <GetFeaturedImage data={mediaData} />
             <h2>
                 <a href={data.link} target="_blank">
                     <span dangerouslySetInnerHTML={{ __html: data.title.rendered }}></span>

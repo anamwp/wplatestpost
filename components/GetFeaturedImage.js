@@ -8,31 +8,17 @@ const ImageWrapper = styled.div`
     }
 `
 
-export default function GetFeaturedImage({embed_url}) {
-    
-    const embed_api_url = embed_url;
-    const [media, setMedia] = useState({
-        loading: false, 
-        data: []
-    });
-    useEffect(() => {
-        setMedia({loading: true});
-        fetch(embed_api_url)
-        .then(res => res.json())
-        .then(data => {
-            setMedia({loading: false, data: data});
-        });
-    }, [])
+export default function GetFeaturedImage({data}) {
+    console.log('image', data.source_url);
+    // console.log('length',  data ?? Object.values(data.media_details).length);
     return (
         <ImageWrapper>
             {
-                media.loading 
+                // data && typeof data === 'object' && Object.keys(data.media_details).length > 0
+                data
                 ? 
-                'loading image'
-                : 
-                media.data.media_details 
-                ? 
-                <img src={media.data.media_details.sizes.full.source_url} alt=""/>
+                <span>image is under construction</span>
+                // <img src={data.media_details.sizes.full.source_url} alt=""/>
                 : 
                 <span>No featured image</span>
             }
