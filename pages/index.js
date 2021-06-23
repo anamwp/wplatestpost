@@ -37,10 +37,15 @@ export default function Home() {
         </p>
 
         <LinksWrapper>
+            <Link href="/matt"><a> Ma.tt </a></Link>
+            <Link href="/wporg"><a> WP Org </a></Link>
             <Link href="/wpmayor"><a> WP Mayor </a></Link>
             <Link href="/wptavern"><a> WP Tavern </a></Link>
             <Link href="/torquemag"><a> Torque Mag </a></Link>
+            <Link href="/wpmainline"><a> WP Mainline </a></Link>
+            <Link href="/wpmudev"><a> WPMUDEV </a></Link>
             <Link href="/gutenbergtimes"><a> Gutenberg Times </a></Link>
+            <Link href="/webdevstudios"><a> WebDevStudios </a></Link>
             <Link href="/woocommerce"><a> WooCommerce </a></Link>
             <Link href="/techcrunch"><a> Tech Crunch </a></Link>
             <Link href="/themeum"><a> Themeum </a></Link>
