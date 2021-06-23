@@ -23,6 +23,13 @@ export default function GetFeaturedImage({embed_url}) {
             setMedia({loading: false, data: data});
         });
     }, [])
+    function isEmpty(obj) {
+        for(var key in obj) {
+            if(obj.hasOwnProperty(key))
+                return false;
+        }
+        return true;
+    }
     return (
         <ImageWrapper>
             {
@@ -30,7 +37,7 @@ export default function GetFeaturedImage({embed_url}) {
                 ? 
                 'loading image'
                 : 
-                media.data.media_details 
+                !isEmpty(media.data.media_details)
                 ? 
                 <img src={media.data.media_details.sizes.full.source_url} alt=""/>
                 : 
