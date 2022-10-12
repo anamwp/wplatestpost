@@ -3,7 +3,7 @@ import SingleHeader from '../components/SingleHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 
-export default function WPOrg() {
+export default function Tenup() {
     const apiurl = 'https://10up.com/wp-json/wp/v2/posts/';
     return (
         <Layout>
