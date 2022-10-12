@@ -39,6 +39,10 @@ export default function Home() {
         <LinksWrapper>
             <Link href="/matt"><a> Ma.tt </a></Link>
             <Link href="/wporg"><a> WP Org </a></Link>
+            <Link href="/wptest"><a> WP Tests </a></Link>
+            <Link href="/wpvip"><a> WP VIP </a></Link>
+            <Link href="/xwp"><a> XWP </a></Link>
+            <Link href="/10up"><a> 10UP </a></Link>
             <Link href="/wpmayor"><a> WP Mayor </a></Link>
             <Link href="/wptavern"><a> WP Tavern </a></Link>
             <Link href="/torquemag"><a> Torque Mag </a></Link>
@@ -61,6 +65,7 @@ export default function Home() {
             <Link href="/themesgrove"><a> Themesgrove </a></Link>
             <Link href="/kinsta"><a> Kinsta </a></Link>
             <Link href="/wpleaders"><a> WP Leaders </a></Link>
+            
         </LinksWrapper>
 
       </main>
