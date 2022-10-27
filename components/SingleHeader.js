@@ -18,10 +18,12 @@ const HeaderWrapper = styled.header`
 
 export default function SingleHeader(props) {
     const title = props.title;
+    const back = props.back ? props.back : '/';
     return (
         <HeaderWrapper>
+            <Link href='/'><a> Home </a></Link>
             <h2>{title}</h2>
-            <Link href="/"><a> Back </a></Link>
+            <Link href={back}><a> Back </a></Link>
         </HeaderWrapper>
     )
 }

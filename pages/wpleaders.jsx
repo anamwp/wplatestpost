@@ -7,7 +7,7 @@ export default function WPLeaders() {
     const apiurl = 'https://wpleaders.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="WP Leaders" />
+            <SingleHeader title="WP Leaders" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

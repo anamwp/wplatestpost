@@ -7,7 +7,7 @@ export default function Wedevs() {
     const apiurl = 'https://wedevs.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="weDevs" />
+            <SingleHeader title="weDevs" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

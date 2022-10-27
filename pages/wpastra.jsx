@@ -7,7 +7,7 @@ export default function WPAstra() {
     const apiurl = 'https://wpastra.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="WP Astra" />
+            <SingleHeader title="WP Astra" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

@@ -7,7 +7,7 @@ export default function Tenup() {
     const apiurl = 'https://10up.com/wp-json/wp/v2/posts/';
     return (
         <Layout>
-            <SingleHeader title="10UP" />
+            <SingleHeader title="10UP" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

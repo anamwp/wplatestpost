@@ -3,11 +3,11 @@ import SingleHeader from '../components/SingleHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 
-export default function WPMUDEV() {
-    const apiurl = 'https://wpmudev.com/blog/wp-json/wp/v2/posts';
+export default function Ollie() {
+    const apiurl = 'https://olliewp.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="wpmudev" back="/product-company" />
+            <SingleHeader title="OllieWP" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

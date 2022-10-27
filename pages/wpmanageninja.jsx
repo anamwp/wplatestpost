@@ -7,7 +7,7 @@ export default function WPManageNinja() {
     const apiurl = 'https://wpmanageninja.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="WP Manage Ninja" />
+            <SingleHeader title="WP Manage Ninja" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

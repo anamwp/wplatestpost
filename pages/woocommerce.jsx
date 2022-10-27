@@ -7,7 +7,7 @@ export default function Woocommerce() {
     const apiurl = 'https://woocommerce.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="WooCommerce" />
+            <SingleHeader title="WooCommerce" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

@@ -7,7 +7,7 @@ export default function WPdeveloper() {
     const apiurl = 'https://wpdeveloper.net/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="WPDeveloper" />
+            <SingleHeader title="WPDeveloper" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

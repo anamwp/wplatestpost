@@ -7,7 +7,7 @@ export default function RadiusTheme() {
     const apiurl = 'https://radiustheme.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="Radius Theme" />
+            <SingleHeader title="Radius Theme" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

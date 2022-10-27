@@ -7,7 +7,7 @@ export default function XWP() {
     const apiurl = 'https://xwp.co/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="XWP" />
+            <SingleHeader title="XWP" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

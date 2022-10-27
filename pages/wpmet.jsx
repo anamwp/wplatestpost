@@ -7,7 +7,7 @@ export default function WPMet() {
     const apiurl = 'https://wpmet.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="WP Met" />
+            <SingleHeader title="WP Met" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

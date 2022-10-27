@@ -40,7 +40,7 @@ export default function Home() {
 
         <main className={styles.main}>
             <h1 className={styles.title}>
-            WordPress Top Blog Sites
+            Product Company News
             </h1>
 
             <p className={styles.description}>
@@ -48,25 +48,29 @@ export default function Home() {
             </p>
 
             <LinksWrapper>
-                <Link href="/matt"><a> Ma.tt </a></Link>
-                <Link href="/wporg"><a> WP Org </a></Link>
-                <Link href="/wptest"><a> WP Tests </a></Link>
-                <Link href="/wpvip"><a> WP VIP </a></Link>
-                <Link href="/wptavern"><a> WP Tavern </a></Link>
-                <Link href="/gutenbergtimes"><a> Gutenberg Times </a></Link>
-                <Link href="/wpmayor"><a> WP Mayor </a></Link>
-                <Link href="/torquemag"><a> Torque Mag </a></Link>
-                <Link href="/wpmainline"><a> WP Mainline </a></Link>
-                <Link href="/techcrunch"><a> Tech Crunch </a></Link>
-                <Link href="/csstricks"><a> CSS Tricks </a></Link>
-                <Link href="/ollie"><a> OllieWP </a></Link>
-                <Link href="/businessbloomer"><a> Business Bloomer </a></Link>
-                <Link href="/richtabor"><a> Rich Tabor </a></Link>
+                <Link href="/10up"><a> 10UP </a></Link>
+                <Link href="/xwp"><a> XWP </a></Link>
+                <Link href="/webdevstudios"><a> WebDevStudios </a></Link>
+                <Link href="/wpengine"><a> WP Engine </a></Link>
+                <Link href="/woocommerce"><a> WooCommerce </a></Link>
+                {/* Archive */}
+                <Link href="/wpmudev"><a> WPMUDEV </a></Link>
+                <Link href="/wpastra"><a> WP Astra </a></Link>
+                <Link href="/wpdeveloper"><a> WPDeveloper </a></Link>
+                <Link href="/thrivethemes"><a> Thrive Themes </a></Link>
+                <Link href="/kinsta"><a> Kinsta </a></Link>
+                <Link href="/themeum"><a> Themeum </a></Link>
+                <Link href="/wedevs"><a> weDevs </a></Link>
+                <Link href="/wpmanageninja"><a> WP Manageninja </a></Link>
+                <Link href="/radiustheme"><a> Radius Theme </a></Link>
+                <Link href="/wpmet"><a> WP Met </a></Link>
+                <Link href="/themesgrove"><a> Themesgrove </a></Link>
+                <Link href="/wpleaders"><a> WP Leaders </a></Link>
             </LinksWrapper>
         </main>
         <FooterLinks>
             <nav>
-                <Link href="/product-company"><a>Product Company</a></Link>
+                <Link href="/"><a>Home</a></Link>
             </nav>
         </FooterLinks>
     <footer className={styles.footer}>

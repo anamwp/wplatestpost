@@ -7,7 +7,7 @@ export default function Themeum() {
     const apiurl = 'https://themeum.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="Themeum" />
+            <SingleHeader title="Themeum" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

@@ -7,7 +7,7 @@ export default function Thrivethemes() {
     const apiurl = 'https://thrivethemes.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="Thrive Themes" />
+            <SingleHeader title="Thrive Themes" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

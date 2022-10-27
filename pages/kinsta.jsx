@@ -7,7 +7,7 @@ export default function Themeum() {
     const apiurl = 'https://kinsta.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="Kinsta" />
+            <SingleHeader title="Kinsta" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

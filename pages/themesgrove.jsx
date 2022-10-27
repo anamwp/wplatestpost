@@ -7,7 +7,7 @@ export default function Themesgrove() {
     const apiurl = 'https://themesgrove.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="Themesgrove" />
+            <SingleHeader title="Themesgrove" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )

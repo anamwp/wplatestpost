@@ -7,7 +7,7 @@ export default function WebDevStudio() {
     const apiurl = 'https://webdevstudios.com/wp-json/wp/v2/posts';
     return (
         <Layout>
-            <SingleHeader title="WebDevStudios" />
+            <SingleHeader title="WebDevStudios" back="/product-company" />
             <Content apiurl = {apiurl} />
         </Layout>
     )
