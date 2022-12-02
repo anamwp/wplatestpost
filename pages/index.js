@@ -51,6 +51,7 @@ export default function Home() {
                 <Link href="/matt"><a> Ma.tt </a></Link>
                 <Link href="/wporg"><a> WP Org </a></Link>
                 <Link href="/wptest"><a> WP Tests </a></Link>
+                <Link href="/developerwp"><a> Developer WP </a></Link>
                 <Link href="/wpvip"><a> WP VIP </a></Link>
                 <Link href="/wptavern"><a> WP Tavern </a></Link>
                 <Link href="/gutenbergtimes"><a> Gutenberg Times </a></Link>
@@ -62,7 +63,6 @@ export default function Home() {
                 <Link href="/ollie"><a> OllieWP </a></Link>
                 <Link href="/businessbloomer"><a> Business Bloomer </a></Link>
                 <Link href="/richtabor"><a> Rich Tabor </a></Link>
-                <Link href="/developerwp"><a> Developer WP </a></Link>
                 <Link href="/masterwp"><a> Master WP </a></Link>
                 <Link href="/poststatus"><a> Post Status </a></Link>
             </LinksWrapper>
